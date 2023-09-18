@@ -1,7 +1,7 @@
 # DS5111_FALL2023_SW2_Lab
 
 1. What did you have to do to get make to work?
-  
+\\ 
 I reused my environment from the last lab, so I already had make installed on the ubuntu server. But if I didn't I would have had to have called sudo apt update and then sudo apt install make. The first to update apt, and then the second to install make.
 
 2. Similarly for python3 -m venv env, what did you have to do? (How likely are you to have guessed that without their clear error message?)
