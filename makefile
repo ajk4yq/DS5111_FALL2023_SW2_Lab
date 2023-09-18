@@ -10,4 +10,4 @@ run:
 
 .PHONY: tests
 tests:
-	pytest --vv tests
+	pytest -vv tests
