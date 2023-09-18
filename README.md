@@ -23,3 +23,23 @@ This would ensure that command runs regardless of whether a file exists with tha
 **7.** The code provided to you for the test file starts with two lines, seemingly to append something to sys.path. What is the purpose of these lines?
   
 This line sys.path.append(".") line adds the current directory to the list of directories Python will look to to find modules. Without this we would not be able to import the clockdeco_param. To use sys.path.append we have to first import the sys module, which is what import sys does.
+
+**8.** Execute sudo apt install tree, and use that application to print out the file and directory structure, just as it is shown in this document at the top. You will have to look up in the reading, or google it in stackoverflow, what flag you need to exclude the 'env' directory. No need to cut and paste the structure, just include the full line you used to get it working.
+
+tree -I env
+
+**9.** Your .gitignore has 'env/', and also a callout to ignore the compiled python files, the ones in __pycache__ folders. What is the meaning of the **/* ?
+
+This is as wildcard used to represent any file path from the working directory to the __pychache__ directories. It allows gitignore to ignore them even if they are in a subdirectory of our current working directory. 
+
+**10.**
+
+Adding versions to requirements.txt
+
+**11.** In the sample code from the book, why does the line if __name__=="__main__": allow the script to run if called directly, but not otherwise? What's going on there?
+
+This returns true only if the current file is the one that we called directly the command line. It won't return true if that file was used for importing a module or something similar. __name__ is the name of the current file, "__main__" is the name of the file called from the command line.
+
+**12.** You would not see the print below the if __name__... line if you do an import of the file. You would see both if calling the file directly. Thsi is becasue the __name__... lien only returns true if the file is called directly.
+
+
