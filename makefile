@@ -12,5 +12,5 @@ run:
 tests:
 	pytest -vv tests
 
-ling:
+lint:
 	.env/bin/activate; pylint bin/perceptron.py
