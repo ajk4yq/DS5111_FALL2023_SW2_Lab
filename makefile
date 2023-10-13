@@ -13,4 +13,4 @@ tests:
 	. env/bin/activate; pytest -vv tests
 
 lint:
-	. env/bin/activate; pyrlint bin/perceptron.py
+	. env/bin/activate; pylint bin/perceptron.py
