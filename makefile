@@ -10,7 +10,7 @@ run:
 
 .PHONY: tests
 tests:
-	pytest -vv tests
+	. env/bin/activate; pytest -vv tests
 
 lint:
-	.env/bin/activate; pylint bin/perceptron.py
+	. env/bin/activate; pyrlint bin/perceptron.py
