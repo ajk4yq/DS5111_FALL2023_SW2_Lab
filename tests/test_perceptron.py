@@ -37,8 +37,8 @@ def test_os_perceptron():
     int, os.popen('free -t -m').readlines()[-1].split()[1:])
 
     assert total_memory >= 5, "Not enough total memory"
-    assert used_memory > 100, "Too much used memory"
-    assert free_memory < 100, "Not enough free memory"
+    assert used_memory < 1000, "Too much used memory"
+    assert free_memory >= 1, "Not enough free memory"
 
 @pytest.mark.skip(reason="This test is not ready for prime time")
 def test_skip_perceptron():
